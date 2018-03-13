@@ -1,0 +1,4 @@
+App\Entity\Folder:
+    folder{1..100}:
+        title: '<sentence()>'
+       

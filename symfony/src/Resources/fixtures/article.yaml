@@ -1,0 +1,5 @@
+App\Entity\Article:
+    article{1..100}:
+        title: '<sentence()>'
+        content: '<sentence(20)>'
+        folder: '@folder*'
