@@ -1,2 +1,14 @@
 resources:
-    App\Entity\Article: ~
+    App\Entity\Article:
+        itemOperations:
+            get:
+                method: 'GET'
+                normalization_context: {'groups': ['get']}
+            put:
+                method: 'PUT'
+        collectionOperations:
+            get:
+                method: 'GET'
+                normalization_context: {'groups': ['list']}
+            post:
+                method: 'POST'

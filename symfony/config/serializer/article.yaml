@@ -1,0 +1,11 @@
+App\Entity\Article:
+    attributes:
+        id:
+            groups: ['get', 'list']
+        title:
+            groups: ['get', 'list', 'post', 'put']
+        content:
+            groups: ['get', 'post', 'put']
+        folder:
+            max_depth: 1
+            groups: ['get', 'post', 'put']
