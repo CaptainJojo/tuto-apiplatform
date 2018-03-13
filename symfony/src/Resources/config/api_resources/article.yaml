@@ -1,5 +1,8 @@
 resources:
     App\Entity\Article:
+        attributes:
+            filters:
+                - article.title_filter
         itemOperations:
             get:
                 method: 'GET'
